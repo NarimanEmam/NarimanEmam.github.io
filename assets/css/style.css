@@ -457,3 +457,10 @@ footer p {
         padding-bottom: 30px;
     }
 }
+#prev-img, #next-img {
+    cursor: pointer;      
+}
+
+#prev-img:hover, #next-img:hover {
+    background: rgba(0,0,0,0.8); 
+}
