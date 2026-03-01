@@ -457,10 +457,34 @@ footer p {
         padding-bottom: 30px;
     }
 }
-#prev-img, #next-img {
-    cursor: pointer;      
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;          
+    color: white;            
+    background: rgba(0,0,0,0.5); 
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 10000;
 }
 
-#prev-img:hover, #next-img:hover {
-    background: rgba(0,0,0,0.8); 
+#prev-img {
+    left: 20px;
+}
+
+#next-img {
+    right: 20px;
+}
+
+.lightbox-arrow:hover {
+    background: rgba(0,0,0,0.8);  
+    transform: translateY(-50%) scale(1.1);
 }
